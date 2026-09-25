@@ -12,7 +12,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/samber/lo v1.53.0
 	github.com/wrouesnel/ctxstdio v0.0.0-20260925000958-306c83092f60
-	golang.org/x/mod v0.17.0
+	golang.org/x/mod v0.41.0
 )
 
 require (
