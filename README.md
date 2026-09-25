@@ -27,6 +27,21 @@ The above grid shows top-left, the number of data blocks which are encoded, then
 the column numbering (to aid retyping), the row numbering (to aid retyping) and
 the groups of 5 characters 7 per row, with an 8th parity block.
 
+For example, encoding a short sentence:
+
+```
+$ echo 'The quick brown fox jumps over the lazy dog.' | typeable encode
+17     A     B     C     D     E     F     G       H
+1    xd8cr tgas5 45aa1 csn6c wnj85 b52zk tk935   3hvyx
+2    tym68 5b6jt a2ps0 qmpba j534m gne89 6pamn   5bvgx
+3    28s57 xfrr2 1g000                           ey7mk
+```
+
+The 17 data blocks fill two full rows and three blocks of a third. The last row
+keeps its parity block under column `H`, and its final data block is padded with
+`0`. Text this short doesn't shrink: the checksum and compression overhead outweigh
+the savings, so compression only pays off on longer input.
+
 ## Usage
 
 ```sh
