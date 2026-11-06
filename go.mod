@@ -5,7 +5,7 @@ go 1.27.1
 require (
 	charm.land/bubbletea/v2 v2.0.10
 	charm.land/lipgloss/v2 v2.0.6
-	github.com/alecthomas/kong v1.16.1
+	github.com/alecthomas/kong v1.17.0
 	github.com/integralist/go-findroot v0.0.0-20160518114804-ac90681525dc
 	github.com/magefile/mage v1.17.2
 	github.com/mholt/archiver v3.1.1+incompatible
